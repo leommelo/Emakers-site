@@ -1,15 +1,20 @@
-import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Registro from './components/Registro'
-import EmakersLogo from './components/EmakersLogo'
+import Registro from './Pages/Registro'
+import Login from './Pages/Login'
+
+
 
 function App() {
 
-
   return (
     <div>
-    <Registro />
-    <EmakersLogo />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/registro" element={<Registro />} />
+          <Route path='/login' element={<Login />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

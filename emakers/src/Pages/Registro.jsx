@@ -1,8 +1,6 @@
 import React from 'react'
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-import { createTheme } from '@mui/material/styles';
-import { Box } from '@mui/material';
+import FolderLogo from '../components/FolderLogo'
+
 
 
 const Registro = () => {
@@ -31,7 +29,7 @@ const Registro = () => {
             <br />
             <a href="" className='conta'>Já possui conta?</a>   
         <div>
-                
+            <FolderLogo />  
         </div> 
     </div>
   )

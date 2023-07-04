@@ -1,45 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
 
 
 body {
   font-family: 'Roboto', sans-serif;
   color: #5E2075;
-  position: absolute;
-
 }
 
 h1 {
-  size: 48px;
-  font-weight: 700px;
-  margin-left: 198px;
-  margin-top: 141px;
+  font-size: 48px;
+  font-weight: 900;
 }
 
 h2 {
-  size: 20px;
-  margin-left: 219px;
-  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 400;
 }
 
 input {
-  width: 300px;
+  width: 100%;
   height: 50px;
-  margin-left: 207px;
   box-sizing: border-box;
   border-radius: 35px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: rgba(239, 239, 239, 1);
+  padding-inline: 13px;
 }
 
 input::placeholder {
   color: #5E2075;
-  padding: 13px;
 }
 
 select {
   width: 145px;
   height: 50px;
-  margin-left: 207px;
   border-radius: 35px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: rgba(239, 239, 239, 1);
@@ -51,33 +56,100 @@ button {
   width: 250px;
   height: 50px;
   border-radius: 35px;
-  margin-left: 232px;
-  margin-top: 27px;
-  margin-bottom: 10px;
   background-color: #5E2075;
   color: #FEFCFF;
+}
+
+.loginPage {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.loginBranca {
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.squareLogin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoLateral {
+  width: 642px;
+  height: 302px;
+  margin-top: -50px;
+  margin-left: -130px;
+}
+
+.inputLogin {
+  padding-bottom: 40px;
+  width: 80%;
+}
+
+.titleLogin {
+  width: 100%;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.folderRegistro {
+  width: 45vw;
+  height: 100vw;
+  max-height: 1080px;
+  background: linear-gradient(180deg, #75206C 44.69%, #FE690E 100%);
+  color: #FEFCFF;
+}
+
+.buttonLogin {
+  width: 300px;
+  height: 65px;
+}
+
+.buttonLogin2{
+  background-color: #FE690E;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.escritaFolder {
+  padding-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleFolder {
+  display: flex;
+  justify-content: center;
+}
+
+.textFolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 416px;
+  height: 168px;
+  padding-top: 15%;  
+}
+
+.buttonFolder {
+  padding-top: 15%;  
 }
 
 .registroDiv {
   width: auto;
   height: 100%;
-  left: 1320px;
-  top: 112px;
 }
 
-.squareEmakers {
-  position: absolute;
-  width: 75%;
-  height: 100%;
-  left: 1319px;
-  top: 112px;
+.squareLogo {
+  width: 100vw;
   float: right;
   background: linear-gradient(180deg, #75206C 44.69%, #FE690E 100%);
-
+  display: flex;
 }
-
-
-.conta {
-  margin-left: 300px;
-}
-
