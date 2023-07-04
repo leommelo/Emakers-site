@@ -2,7 +2,9 @@ import React from 'react'
 import LogoLateral from "../imgs/LogoLateral.png"
 import FolderRegistro from '../components/FolderRegistro'
 
+
 const Login = () => {
+
     return (
         <div className='loginPage'>
             <div className='loginBranca'>
