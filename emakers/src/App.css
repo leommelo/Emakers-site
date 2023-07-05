@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   outline: 0;
@@ -23,7 +23,7 @@ h2 {
   font-weight: 400;
 }
 
-p{
+p {
   font-size: 20px;
   font-weight: 400;
 }
@@ -82,8 +82,6 @@ button {
 .logoLateral {
   width: 642px;
   height: 302px;
-  margin-top: -50px;
-  margin-left: -130px;
 }
 
 .inputLogin {
@@ -109,9 +107,10 @@ button {
 .buttonLogin {
   width: 300px;
   height: 65px;
+  font-size: 20px;
 }
 
-.buttonLogin2{
+.buttonLogin2 {
   background-color: #FE690E;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -135,21 +134,81 @@ button {
   align-items: center;
   width: 416px;
   height: 168px;
-  padding-top: 15%;  
+  padding-top: 15%;
 }
 
 .buttonFolder {
-  padding-top: 15%;  
+  padding-top: 15%;
 }
 
-.registroDiv {
-  width: auto;
-  height: 100%;
+.registroPage {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.registroBranca {
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+}
+
+.formRegistro {
+  padding-top: 7%;
+}
+
+.inputRegistro {
+  padding-bottom: 30%;
+  width: 350px;
+  height: 76px;
+
+}
+
+.selectRegistro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+  height: 76px;
+  padding-bottom: 30%;
+}
+
+.conta {
+  padding-top: 2%;
+  font-size: 19px;
+}
+
+#inputImage {
+  width: 175px;
 }
 
 .squareLogo {
-  width: 100vw;
-  float: right;
-  background: linear-gradient(180deg, #75206C 44.69%, #FE690E 100%);
+  width: 55vw;
+  height: 100vw;
+  background: linear-gradient(180deg, #75206C 25.69%, #FE690E 50%);
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FEFCFF;
+  padding-top: 15%;
+}
+
+.logoEmakers {
+  width: 40%;
+  padding-bottom: 10%;
+}
+
+.textSlogan {
+  width: 571px;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#redeSocialText {
+  margin-top: -4%;
 }
