@@ -212,3 +212,114 @@ button {
 #redeSocialText {
   margin-top: -4%;
 }
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.topPerfil {
+  background-image: url(./imgs/ImageTop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:20vw;
+}
+
+.logoLateralBranca {
+  position: absolute;
+  left: -60px;
+}
+
+.menuPerfil {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.buttonsPerfil {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+}
+
+#butaoPesquisa {
+  background-image: url(./imgs/Lupa.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#butaoAmigos {
+  background-image: url(./imgs/Amigos.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#butaoEu {
+  background-image: url(./imgs/FotoPerfill.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.mainPerfil {
+  border-top: 4px solid #FE690E;
+  width: 100vw;
+  height: 730px;
+}
+
+.perfilLayout {
+  display: flex;
+  flex-direction: row;
+}
+
+.fotoPerfil {
+  border-radius: 50%;
+  border: 1px solid rgba(254, 105, 14, 1);
+  width: 275px;
+  height: 275px;
+  position: relative;
+  top: -130px;
+  left: 100px;
+}
+
+.dadosPerfil {
+  color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+  justify-content: center;
+}
+
+.bioPerfil {
+  width: 405px;
+  height: 145px;
+  position: relative;
+  left: 30px;
+}
+
+#nomePerfil {
+  font-weight: 300;
+  line-height: 58px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.imagesPerfil {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-inline: 150px;
+  border-top: 4px dashed #FE690E;
+  text-align: center;
+}
+
+.imgPerfil {
+  width: 30%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

@@ -1,9 +1,16 @@
 import React from 'react'
 import LogoLateral from "../imgs/LogoLateral.png"
 import FolderRegistro from '../components/FolderRegistro'
+import { useNavigate } from 'react-router-dom'
 
 
 const Login = () => {
+
+    const navigate = useNavigate();
+
+    function handleRegistro(){
+        navigate('/perfil')
+    }
 
     return (
         <div className='loginPage'>
@@ -19,7 +26,7 @@ const Login = () => {
                         <p>Senha</p>
                         <input type="text" placeholder='Digite sua senha' />
                     </div>
-                    <button type='submit' className='buttonLogin'>Entrar</button>
+                    <button type='submit' className='buttonLogin' onClick={handleRegistro}>Entrar</button>
                 </div>
             </div>
             <div>

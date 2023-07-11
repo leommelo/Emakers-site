@@ -43,7 +43,7 @@ const Registro = () => {
                     </form>
                 </div>
                 <button className='butaoRegistrar buttonLogin' type='submit'>Registrar-se</button>
-                <a href="/login" className='conta'>Já possui conta?</a>
+                <a href="/ " className='conta'>Já possui conta?</a>
             </div>
             <div>
                 <FolderLogo />
