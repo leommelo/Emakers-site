@@ -57,7 +57,7 @@ select {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background: rgba(239, 239, 239, 1);
   color: #5E2075;
-  padding: 13px;
+  padding: 1.3rem;
 }
 
 button {
@@ -106,7 +106,7 @@ button {
   background-size: cover;
   position: relative;
   float: right;
-  bottom: 4rem;
+  bottom: 4.5rem;
   margin-right: 5%;
   width: 30px;
   height: 30px;
@@ -384,6 +384,12 @@ button {
   object-fit: cover;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+@media (max-width:1050px){
+  .textSlogan {
+    text-align: center;
+    width: 90%;
+  }
+}
 
 @media (max-width: 930px){
   #textoFolder {
@@ -455,6 +461,7 @@ button {
   select {
     width: 100%;
     margin-bottom: 1rem;
+    padding: 1rem;
   }
 
   #inputImage {
@@ -525,7 +532,7 @@ button {
   }
 
   #icon, #iconHide {
-    bottom: 6rem;
+    bottom: 5.5rem;
   } 
 }
 
@@ -539,7 +546,7 @@ button {
   }
 
   #icon, #iconHide {
-    bottom: 7rem;
+    bottom: 5.8rem;
   } 
 }
 
