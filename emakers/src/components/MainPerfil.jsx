@@ -17,11 +17,11 @@ const MainPerfil = () => {
             </div>
         </div>
         </div>
-        <div className='imagesPerfil'>
+        <section className='imagesPerfil'>
             <img src={FotoUm} className='imgPerfil' />
             <img src={FotoDois} className='imgPerfil' />
             <img src={FotoTres} className='imgPerfil' />
-        </div>
+        </section>
     </div>
   )
 }

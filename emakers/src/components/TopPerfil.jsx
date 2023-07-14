@@ -6,9 +6,10 @@ const TopPerfil = () => {
     <div className='topPerfil'>
         <img src={LogoLateralBranca} className='logoLateralBranca' />
         <div className='menuPerfil'>
-            <button className='buttonsPerfil' id='butaoPesquisa'></button>
-            <button className='buttonsPerfil' id='butaoAmigos'></button>
-            <button className='buttonsPerfil' id='butaoEu'></button>
+            <button className='buttonsPerfil buttonsP' id='butaoPesquisa'></button>
+            <button className='buttonsPerfil buttonsP' id='butaoAmigos'></button>
+            <button className='buttonsPerfil buttonsP' id='butaoEu'></button>
+            <button className='buttonsPerfil' id='butaoCompacto'></button>
         </div>
     </div>
   )

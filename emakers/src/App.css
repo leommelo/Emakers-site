@@ -7,6 +7,9 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -14,17 +17,17 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 900;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-weight: 400;
 }
 
 p {
-  font-size: 20px;
+  font-size: 2.0rem;
   font-weight: 400;
 }
 
@@ -64,12 +67,15 @@ button {
   display: flex;
   flex-direction: row;
   width: 100vw;
+  height: 100vh;
 }
 
 .loginBranca {
   width: 55vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .squareLogin {
@@ -80,34 +86,58 @@ button {
 }
 
 .logoLateral {
-  width: 642px;
-  height: 302px;
+  width: 34.2rem;
+  padding-top: 5%;
+  padding-bottom: 8%;
 }
 
 .inputLogin {
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
   width: 80%;
+}
+
+#icon {
+  background-image: url(./imgs/show.png);
+  background-size: cover;
+  position: relative;
+  float: right;
+  bottom: 4rem;
+  margin-right: 5%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#iconHide{
+  background-image: url(./imgs/hide.png);
+  background-size: cover;
+  position: relative;
+  float: right;
+  bottom: 4rem;
+  margin-right: 5%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 .titleLogin {
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 5%;
   display: flex;
   justify-content: center;
 }
 
 .folderRegistro {
   width: 45vw;
-  height: 100vw;
-  max-height: 1080px;
+  height: 100vh;
   background: linear-gradient(180deg, #75206C 44.69%, #FE690E 100%);
   color: #FEFCFF;
 }
 
 .buttonLogin {
-  width: 300px;
-  height: 65px;
-  font-size: 20px;
+  width: 30rem;
+  height: 6.5rem;
+  font-size: 2.0rem;
 }
 
 .buttonLogin2 {
@@ -132,8 +162,8 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 416px;
-  height: 168px;
+  width: 41.6rem;
+  height: 16.8rem;
   padding-top: 15%;
 }
 
@@ -177,7 +207,7 @@ button {
 
 .conta {
   padding-top: 2%;
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 #inputImage {
@@ -223,11 +253,15 @@ button {
   background-image: url(./imgs/ImageTop.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height:20vw;
+  height: 20vw;
+  min-height: 250px;
 }
 
 .logoLateralBranca {
   position: absolute;
+  width: 50%;
+  max-width: 439px;
+  min-width: 322px;
   left: -60px;
 }
 
@@ -236,7 +270,7 @@ button {
   flex-direction: row;
   align-items: end;
   position: absolute;
-  top: 20px;
+  top: 2%;
   right: 40px;
 }
 
@@ -265,6 +299,10 @@ button {
   background-size: cover;
 }
 
+#butaoCompacto {
+  display: none;
+}
+
 .mainPerfil {
   border-top: 4px solid #FE690E;
   width: 100vw;
@@ -279,11 +317,13 @@ button {
 .fotoPerfil {
   border-radius: 50%;
   border: 1px solid rgba(254, 105, 14, 1);
-  width: 275px;
-  height: 275px;
+  width: 27.5rem;
+  min-width: 180px;
+  height: 27.5rem;
+  min-height: 180px;
   position: relative;
-  top: -130px;
-  left: 100px;
+  top: -13rem;
+  left: 10rem;
 }
 
 .dadosPerfil {
@@ -295,7 +335,8 @@ button {
 }
 
 .bioPerfil {
-  width: 405px;
+  width: 80%;
+  max-width: 405px;
   height: 145px;
   position: relative;
   left: 30px;
@@ -310,16 +351,137 @@ button {
 
 .imagesPerfil {
   width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 50px;
-  padding-inline: 150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 5%;
+  padding-inline: 5%;
+  padding-top: 3%;
+  padding-bottom: 10%;
   border-top: 4px dashed #FE690E;
-  text-align: center;
 }
 
 .imgPerfil {
-  width: 30%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 930px){
+  #textoFolder {
+    font-size: 4rem;
+  }
+
+  .textFolder {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  html {
+    font-size: 50%;
+  }
+
+  .loginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .loginBranca {
+    width: 100vw;
+    height: 100%;
+    padding-bottom: 7%;
+  }
+
+  .logoLateral{
+    padding-bottom: 5%;
+  }
+
+  .folderRegistro {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .textFolder {
+    padding-left: 0px;
+  }
+
+  .perfilLayout {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -50px;
+  }
+
+  .fotoPerfil {
+    left: auto;
+  }
+
+  .dadosPerfil {
+    padding-left: 0;
+    margin-top: -13rem;
+  }
+
+  .buttonsP {
+    display: none;
+  }
+
+  #butaoCompacto {
+    display: flex;
+    background-color: rgba(10, 23, 55, 0);
+    background-image: url(./imgs/menu.png);
+    background-position: center;
+    border: 0;
+  }
+
+  #textoFolder {
+    font-size: 4.8rem;
+  }
+
+  #icon, #iconHide {
+    bottom: 5rem;
+  }  
+}
+
+@media (max-width: 426px) {
+  html {
+    font-size: 40%;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .folderRegistro{
+    height: 90vw;
+  }
+
+  .imagesPerfil {
+    padding-bottom: 100px;
+  }
+
+  #icon, #iconHide {
+    bottom: 6rem;
+  } 
+}
+
+@media (max-width: 376px) {
+  html {
+    font-size: 35%;
+  }
+
+  #nomePerfil {
+    padding-left: 8px;
+  }
+
+  #icon, #iconHide {
+    bottom: 7rem;
+  } 
+}
+
+@media (max-width: 321px) {
+  h1 {
+    font-size: 4rem;
+  }
 }

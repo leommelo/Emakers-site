@@ -20,7 +20,7 @@ const Registro = () => {
                         <InputRegistro nome={'E-mail'} placeHolder={'exemplo@email.com'}/>
                         </div>
                         <div className='inputRegistro'>
-                        <InputRegistro nome={'Senha'} placeHolder={'Digite sua senha...'}/>
+                        <InputRegistro type="password" nome={'Senha'} placeHolder={'Digite sua senha...'}/>
                         </div>
                         <div className='inputRegistro'>
                         <InputRegistro nome={'Confirmar senha'} placeHolder={'Redigite sua senha...'}/> 
