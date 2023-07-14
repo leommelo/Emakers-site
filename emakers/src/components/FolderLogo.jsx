@@ -4,7 +4,7 @@ import LogoEmakers from "../imgs/emakerslogo.png"
 
 const FolderLogo = () => {
   return (
-    <div className='squareLogo'>
+    <div className='squareLogo' >
         <img src={LogoEmakers} className='logoEmakers' />
         <div className='textSlogan'>
         <h2>Venha fazer parte da </h2> <br />
